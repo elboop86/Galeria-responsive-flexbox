@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background: #0b0b0b;
+}
+
+section {
+    margin: .5vw;
+    font-size: 0;
+    display:  -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+section div {
+    -webkit-box-flex: auto;
+    -ms-flex:auto;
+    flex:auto;
+    width: 200px;
+    margin: .5vw;
+}
+
+section div img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-widht: 400px) {
+    section div {
+        margin: 0;
+    }
+
+    section {
+        padding: 0;
+    }
+}
